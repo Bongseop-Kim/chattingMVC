@@ -76,7 +76,7 @@ export class ChatsGateway
 
     await this.chattingModel.create({
       user: socketObj,
-      caht: chat,
+      chat: chat,
     });
 
     socket.broadcast.emit('new_chat', {
